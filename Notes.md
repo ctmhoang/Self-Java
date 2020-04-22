@@ -1,4 +1,12 @@
 # Some notes non FX :))
+## UML Graph
+* `+` public
+* `-` private
+* `#` protected
+* *italicized* abtract method
+* `:` return or type
+* Superclass methods are generally omitted in the UML diagram for subclasses.
+
 ## Variable-Length Argument Lists
 `typeName... parameterName`
 ## Arrays Class
@@ -84,6 +92,12 @@ and end with the line separator.
 to open an input stream and use this stream to create a Scanner object as follows:</br>
 `Scanner input = new Scanner(url.openStream());`</br>
 Now you can read the data from the input stream just like from a local file.
+## Abstract Class
+* The constructor in the abstract class is defined as protected because it is used only by
+subclasses. When you create an instance of a concrete subclass, its superclass’s constructor is
+invoked to initialize data fields defined in the superclass.
+* Abstract methods are nonstatic.
+
 ## Regex
 * http://regexone.com/ </br>
 `abc…`    Letters</br>
