@@ -37,30 +37,25 @@ an ArithmeticException if the result cannot be terminated. However, you can use 
 loaded divide(BigDecimal d, int scale, int roundingMode) method to specify
 a scale and a rounding mode to avoid this exception, where scale is the maximum number
 of digits after the decimal point
-</br>
- `BigDecimal c = a.divide(b, 20, BigDecimal.ROUND_UP);`
+</br>`BigDecimal c = a.divide(b, 20, BigDecimal.ROUND_UP);`
 * Because strings are immutable and are ubiquitous in programming, the JVM uses a unique
 instance for string literals with the same character sequence in order to improve efficiency and save
-memory. Such an instance is called an interned string </br>
-```
+memory. Such an instance is called an interned string
+``` java
 String s1 = "Welcome to Java";
 String s2 = new String("Welcome to Java");
 String s3 = "Welcome to Java";
 System.out.println("s1 == s2 is " + (s1 == s2));
 System.out.println("s1 == s3 is " + (s1 == s3));
 ```
-</br>
-display
-</br>
+Display
 ```
 s1 == s2 is false
 s1 == s3 is true
 ```
 * Some method in String class
-	* Method `getChars(int srcBegin, int srcEnd, char[] dst, int
-dstBegin)` copy a substring of the string from index srcBegin to index srcEnd–1
+	* Method `getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)` copy a substring of the string from index srcBegin to index srcEnd–1
 into a character array dst starting from index dstBegin.
-
 	* String.format() use regexes to replace,  MessageFormat.format() use like format in python
 
 ## Handling Exceptions
@@ -103,7 +98,7 @@ Now you can read the data from the input stream just like from a local file.
 `[0-9]`   Numbers 0 to 9</br>
 `\w`      Any Alphanumeric character</br>
 `\W`      Any Non-alphanumeric character</br>
-`{m}`     m Repetition</br>s
+`{m}`     m Repetitions</br>
 `{m,n}`   m to n Repetitions</br>
 `*`       Zero or more repetitions</br>
 `+`       One or more repetitions</br>
@@ -114,4 +109,4 @@ Now you can read the data from the input stream just like from a local file.
 `(…)`     Capture Group</br>
 `(a(bc))` Capture Sub-group</br>
 `(.*)`    Capture all</br>
-(ab|cd) Matches ab or cd
+`(ab|cd)` Matches ab or cd
