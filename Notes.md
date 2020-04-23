@@ -3,10 +3,13 @@
 * `+` public
 * `-` private
 * `#` protected
-* *italicized* abtract method
+* *italicized* abtract method, interface's name
 * `:` return or type
 * Superclass methods are generally omitted in the UML diagram for subclasses.
-
+* The dashed line and hollow triangle are used to point to the interface.
+* Small black triangle that indicates the direction of the association relationship.
+* A filled diamond is attached to an aggregating class -- white : aggregation ; black : composition
+* The getter and setter methods for weight are provided, but omitted in the UML
 ## Variable-Length Argument Lists
 `typeName... parameterName`
 ## Arrays Class
@@ -97,7 +100,24 @@ Now you can read the data from the input stream just like from a local file.
 subclasses. When you create an instance of a concrete subclass, its superclass’s constructor is
 invoked to initialize data fields defined in the superclass.
 * Abstract methods are nonstatic.
-
+## Interface
+* The modifiers public static final on data fields and the modifiers public
+abstract on methods can be omitted in an interface. 
+* Although the public modifier may be omitted for a method defined in the interface,
+the method must be defined public when it is implemented in a subclass.
+* Java 8 also permits public static methods in an interface.
+* [default](https://chaseyourjava.blogspot.com/2017/12/default-methods-in-java-8.html)
+method provides a default implementation for the method in the interface. A class that
+implements the interface may simply use the default implementation for the method or
+override the method with a new implementation. This feature enables you to add a new
+method to an existing interface with a default implementation without having to rewrite
+the code for the existing classes that implement this interface.
+* compareTo method should be consistent with equals one.
+* An interface with an empty body is referred to as a marker interface (Cloneable inteface)
+* Cloneable is shallow copy 
+* An interface can inherit other interfaces using the extends keyword. Such an interface is
+called a subinterface.
+*  
 ## Regex
 * http://regexone.com/ </br>
 `abc…`    Letters</br>
