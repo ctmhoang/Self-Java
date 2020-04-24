@@ -117,7 +117,36 @@ the code for the existing classes that implement this interface.
 * Cloneable is shallow copy 
 * An interface can inherit other interfaces using the extends keyword. Such an interface is
 called a subinterface.
-*  
+*
+## General Notes
+* When a string is concatenated with an object using the plus sign (+), the object’s string
+representation from the toString() method is used to concatenate with the string 
+## Class Design
+* Cohension
+	* separate responsibilities
+
+* Consistency
+	* naming conventions
+	* naming consistency
+	* no-arg constructor
+
+* Encapsulation
+	* encapsulate data fields
+
+* Clarity
+	* easy to explain
+	* independent methods
+	* intuitive meaning
+	* independent properties
+
+* Completeness
+
+* Instance vs. Static
+	* use a setter method to change the static data field
+* Inheritance vs. Aggregation
+
+* Interfaces vs. Abstract Classes
+
 ## Regex
 * http://regexone.com/ </br>
 `abc…`    Letters</br>
