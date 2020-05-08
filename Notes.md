@@ -75,7 +75,8 @@ into a character array dst starting from index dstBegin.
 * Should not let the method terminate the program—the caller should decide whether to termi-
 nate the program
 * input.nextLine(); // Discard input
-*  Rethrowing Exceptions
+* Rethrowing Exceptions
+* Checked Exception (Recovered - declare throws in method - UI) vs Unchecked Exception (Cannot recovered - Do not need to declare in method - Sever - Runtime Exception Subclass)
 ## Files
 * The File class contains the methods for obtaining file and directory properties, and for renaming and
 deleting files and directories, but it does not contain the methods for reading and writing file contents.
